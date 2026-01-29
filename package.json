@@ -1,11 +1,14 @@
 {
   "name": "vue-social-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Vue social icons and sharing component",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "publishConfig": {
     "access": "public"
   },
