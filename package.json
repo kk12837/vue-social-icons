@@ -12,6 +12,14 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kk12837/vue-social-network.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kk12837/vue-social-network/issues"
+  },
+  "homepage": "https://github.com/kk12837/vue-social-network#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,7 +27,7 @@
     "serve": "vite preview",
     "prepublishOnly": "npm run build:lib"
   },
-  "keywords": [],
+  "keywords": ["vue","social","social-icons","share","vue3","fontawesome","social-share"],
   "author": "Keith Kong",
   "license": "MIT",
   "peerDependencies": {
