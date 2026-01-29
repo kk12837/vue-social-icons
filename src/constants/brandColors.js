@@ -1,0 +1,20 @@
+export const brandColors = {
+  facebook: '#1877F2',
+  twitter: '#1DA1F2',
+  instagram: '#E4405F',
+  linkedin: '#0A66C2',
+  youtube: '#FF0000',
+  github: '#181717',
+  tiktok: '#000000',
+  pinterest: '#BD081C',
+  reddit: '#FF4500',
+  snapchat: '#FFFC00',
+  whatsapp: '#25D366',
+  telegram: '#0088CC',
+  discord: '#5865F2',
+  medium: '#00AB6C',
+  steam: '#000000',
+  twitch: '#9146FF',
+  dribbble: '#EA4C89',
+  behance: '#1769FF'
+}

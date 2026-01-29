@@ -1,4 +1,3 @@
-
 <template>
   <component
     :is="share ? 'a' : 'span'"
@@ -21,6 +20,8 @@
 
 <script setup>
 import { computed } from 'vue'
+import { brandMap } from '../constants/brandMap'
+import { brandColors } from '../constants/brandColors'
 
 const props = defineProps({
   type: { type: String, required: true },
@@ -32,27 +33,6 @@ const props = defineProps({
   share: { type: Boolean, default: false },
   theme: { type: String, default: 'color' } // 'color' or 'blankandwhite'
 })
-
-const brandMap = {
-  facebook: 'facebook-f',
-  twitter: 'twitter',
-  instagram: 'instagram',
-  linkedin: 'linkedin-in',
-  youtube: 'youtube',
-  github: 'github',
-  tiktok: 'tiktok',
-  pinterest: 'pinterest',
-  reddit: 'reddit-alien',
-  snapchat: 'snapchat-ghost',
-  whatsapp: 'whatsapp',
-  telegram: 'telegram',
-  discord: 'discord',
-  medium: 'medium',
-  steam: 'steam',
-  twitch: 'twitch',
-  dribbble: 'dribbble',
-  behance: 'behance'
-}
 
 const icon = computed(() => {
   if (!props.type) return null
@@ -71,27 +51,6 @@ const icon = computed(() => {
   const normalized = raw.replace(/\s+/g, '-').replace(/^@/, '')
   return ['fab', normalized]
 })
-
-const brandColors = {
-  facebook: '#1877F2',
-  twitter: '#1DA1F2',
-  instagram: '#E4405F',
-  linkedin: '#0A66C2',
-  youtube: '#FF0000',
-  github: '#181717',
-  tiktok: '#000000',
-  pinterest: '#BD081C',
-  reddit: '#FF4500',
-  snapchat: '#FFFC00',
-  whatsapp: '#25D366',
-  telegram: '#0088CC',
-  discord: '#5865F2',
-  medium: '#00AB6C',
-  steam: '#000000',
-  twitch: '#9146FF',
-  dribbble: '#EA4C89',
-  behance: '#1769FF'
-}
 
 const themeStyle = computed(() => {
   const raw = props.type ? props.type.trim().toLowerCase() : ''
@@ -146,7 +105,8 @@ function buildShareHref(platform, url, title, description) {
 const shareHref = computed(() => {
   if (!props.share) return null
   const platform = props.type.trim().toLowerCase().replace(/^fab:/, '')
-  return buildShareHref(platform, currentUrl.value, props.title, props.description)
+  const desc = props.description && props.description.trim() ? props.description : currentUrl.value
+  return buildShareHref(platform, currentUrl.value, props.title, desc)
 })
 
 </script>

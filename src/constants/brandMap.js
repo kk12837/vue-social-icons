@@ -1,0 +1,20 @@
+export const brandMap = {
+  facebook: 'facebook-f',
+  twitter: 'twitter',
+  instagram: 'instagram',
+  linkedin: 'linkedin-in',
+  youtube: 'youtube',
+  github: 'github',
+  tiktok: 'tiktok',
+  pinterest: 'pinterest',
+  reddit: 'reddit-alien',
+  snapchat: 'snapchat-ghost',
+  whatsapp: 'whatsapp',
+  telegram: 'telegram',
+  discord: 'discord',
+  medium: 'medium',
+  steam: 'steam',
+  twitch: 'twitch',
+  dribbble: 'dribbble',
+  behance: 'behance'
+}
