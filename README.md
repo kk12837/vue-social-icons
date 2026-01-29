@@ -44,3 +44,23 @@ Notes
 
 - `vue` and `@fortawesome/vue-fontawesome` are peer dependencies — install them in your project.
 - Build is done with Vite library mode. See `vite.config.lib.js`.
+
+Plugin Options
+
+You can pass options when installing the plugin with `app.use()` to set package-level defaults (for example, which platforms to show in the popover):
+
+```js
+import { createApp } from 'vue'
+import App from './App.vue'
+import VueSocialIcons from 'vue-social-icons'
+
+const app = createApp(App)
+app.use(VueSocialIcons, { platforms: ['twitter','facebook','linkedin','reddit'] })
+app.mount('#app')
+```
+
+Behavior
+
+- `SocialShare` uses its `platforms` prop if you pass a non-empty array directly to the component.
+- If the component `platforms` prop is empty/omitted, `SocialShare` falls back to the `platforms` array supplied via the plugin options above.
+- This allows consumers to centrally configure default platforms while still overriding per-instance when needed.

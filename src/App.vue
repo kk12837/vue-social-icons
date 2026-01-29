@@ -37,19 +37,26 @@
         <social-icon type="pinterest" share :title="shareTitle" :description="shareDescription" />
       </div>
     </section>
+
+    <section style="margin-top:1.5rem">
+      <h2>Share popover</h2>
+      <social-share :title="shareTitle" :description="shareDescription" :url="shareUrl" />
+    </section>
   </div>
 </template>
 
 <script>
 import SocialIcon from '@/components/SocialIcon.vue'
+import SocialShare from '@/components/SocialShare.vue'
 
 export default {
   name: 'App',
-  components: { SocialIcon },
+  components: { SocialIcon, SocialShare },
   data() {
     return {
       shareTitle: 'Vue Social Network',
-      shareDescription: 'Check out this Vue Social Network demo.'
+      shareDescription: 'Check out this Vue Social Network demo.',
+      shareUrl: ''
     }
   }
 }
