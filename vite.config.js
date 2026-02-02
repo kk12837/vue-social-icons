@@ -4,6 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [vue()],
+  base: '/vue-social-network/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')

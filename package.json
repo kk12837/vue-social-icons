@@ -25,7 +25,8 @@
     "build": "vite build",
     "build:lib": "vite build --config vite.config.lib.js",
     "serve": "vite preview",
-    "prepublishOnly": "npm run build:lib"
+    "prepublishOnly": "npm run build:lib",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "vue",
@@ -39,20 +40,21 @@
   "author": "Keith Kong",
   "license": "MIT",
   "peerDependencies": {
-    "vue": "^3",
-    "@fortawesome/vue-fontawesome": "^3"
+    "@fortawesome/vue-fontawesome": "^3",
+    "vue": "^3"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
     "@fortawesome/free-regular-svg-icons": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
-    "@fortawesome/vue-fontawesome": "^3.1.3",
+    "@fortawesome/vue-fontawesome": "^3",
     "@vitejs/plugin-vue": "^5.0.4",
     "vite": "^5.0.0",
-    "vue": "^3.5.27"
+    "vue": "^3"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass-embedded": "^1.97.3"
   }
 }
