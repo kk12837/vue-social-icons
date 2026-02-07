@@ -1,6 +1,6 @@
 # vue-social-icons
 
-[Live demo](https://kk12837.github.io/vue-social-network/)
+[Live demo](https://kk12837.github.io/vue-social-icons/)
 
 Vue social icons and sharing component
 
