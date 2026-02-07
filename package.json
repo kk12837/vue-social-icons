@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kk12837/vue-social-network.git"
+    "url": "git+https://github.com/kk12837/vue-social-icons.git"
   },
   "bugs": {
-    "url": "https://github.com/kk12837/vue-social-network/issues"
+    "url": "https://github.com/kk12837/vue-social-icons/issues"
   },
-  "homepage": "https://github.com/kk12837/vue-social-network#readme",
+  "homepage": "https://github.com/kk12837/vue-social-iconsk#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
